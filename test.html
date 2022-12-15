@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .abc dd:target {
+            background-color: burlywood;
+        }
+
+        input:enabled+label {
+            color: blue;
+        }
+
+        .sh {
+            text-align: center;
+            text-shadow: -1px -1px 0 #fff, 1px 1px 0 #aaa;
+        }
+
+        #tt {
+            border: 5px solid transparent;
+            border-image: url(./flower.jpg) 10 round;
+
+        }
+
+        #bg {
+            background: repeating-radial-gradient(circle farthest-side, #fff 25%, #faf 35%, #faf 35%, #fff 50%);
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <dl class="sample target abc">
+        <dt><a href="#panel1">MENU1</a></dt>
+        <dd id="panel1">panel1 panel1 panel1</dd>
+        <dt><a href="#panel2">MENU2</a></dt>
+        <dd id="panel2">panel2 panel2 panel2</dd>
+    </dl>
+
+    <form>
+        <input type="radio" id="radio1">
+        <label for="radio1">選項1</label>
+        <input type="radio" id="radio2">
+        <label for="radio2">選項2</label>
+        <input type="radio" id="radio3" disabled>
+        <label for="radio3">選項3</label>
+    </form>
+
+    <div class="sh">Bevel</div>
+
+    <p id="tt">clip</p>
+
+    <div id="bg">放射狀背景</div>
+
+
+</body>
+
+</html>
