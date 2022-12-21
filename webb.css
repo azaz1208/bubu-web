@@ -27,6 +27,7 @@ body {
    margin: 0 auto;
 
 }
+
 /* 背景圖 */
 .bg {
    width: 100%;
@@ -66,7 +67,7 @@ body {
 .menu {
    background: #d8c7a0;
    margin-top: -5px;
-   
+
 }
 
 .menu ul {
@@ -77,7 +78,7 @@ body {
 .menu li {
    width: 250px;
    list-style: none;
-   
+
 }
 
 .menu a {
@@ -88,30 +89,32 @@ body {
    text-decoration: none;
    font-size: 20px;
 }
+
 .menu a:hover {
    background: #ecdfc2;
- }
+}
 
- /* menu 的商品格 */
- .container {
- 
-   width: 960px;
+/* menu 的商品格 */
+.container {
+
+   /* width: 960px; */
    /* margin auto > 上下通常不會有作用,但blanchedalmond這個背景顏色會和網頁左右區塊會平分  */
    margin: auto;
    display: flex;
-  flex-wrap: wrap;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 /* 子層 */
 .col {
    background-color: lightslategrey;
    /* bgc 的寬度 */
-   width: 33%;
-   height: 200px;
+   width: 25%;
+   height: fit-content;
    margin: 20px;
    /* float 浮動 會讓文字區塊浮動 這時因浮動 父層會找不到子層 當作沒這個兒子 */
    padding: 10px;
-  
+
 }
 
 .col img {
