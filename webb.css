@@ -179,7 +179,7 @@ display: flex;
    /* 寬度不夠 會換行 */
    flex-wrap: wrap;
    justify-content: center;
-  margin-top: 20px;
+   margin-top: 20px;
 }
 
 .col2 {
@@ -247,13 +247,13 @@ display: flex;
 
 
 /* 下方介紹的圖片 */
-.infor-img {
+/* .infor-img {
    width: 300px;
    height: 250px;
    font-size: 50px;
    margin: 25px;
    color: white;
-}
+} */
 
 
 
