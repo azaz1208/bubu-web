@@ -26,6 +26,11 @@ body {
    text-align: center;
    margin: 0 auto;
 
+   height: 78px;
+   position:absolute;
+   top: 30%; 
+   left: 50%;
+
 }
 /* 背景圖 */
 .bg {
