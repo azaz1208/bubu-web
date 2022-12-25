@@ -27,6 +27,30 @@ body {
    margin: 0 auto;
 
 }
+
+@media screen and (max-width: 550px){
+.container{
+   display: flex;
+   flex-direction: column;
+}
+.top{
+ 
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 /* 背景圖 */
 .bg {
    width: 100%;
