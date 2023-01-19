@@ -43,24 +43,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 550px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-
-
-
-}
-
-
-
-
-
-
-
 
 
 /* 背景圖 */
@@ -165,6 +147,14 @@ body {
     justify-content: center;
 }
 
+@media screen and (max-width: 550px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 /* 商品名字 */
 .container_h1 {
     font-size: 25px;
@@ -250,7 +240,7 @@ margin-top: -7%;
 }
 
 /* 下方的圖片參觀分享覽 */
-.pic-infro {
+#pic_info {
     list-style: none;
     width: 1500px;
     /* margin auto > 上下通常不會有作用,但blanchedalmond這個背景顏色會和網頁左右區塊會平分  */
@@ -262,7 +252,7 @@ margin-top: -7%;
     margin-top: 20px;
 }
 
-.col2 {
+#pic_info div {
 
     /* col的寬度 (父元素x25%) */
     width: 25%;
@@ -273,7 +263,7 @@ margin-top: -7%;
 
 }
 
-.col2 img {
+#pic_info div img {
     /* width: 100%; */
     width: 90%;
     border: #fff 5px solid;
@@ -282,7 +272,7 @@ margin-top: -7%;
     position: relative;
 }
 
-.co13 {
+#pic_info div a p {
     font-size: 30px;
     /* 描邊 */
     -webkit-text-stroke: 1px rgb(0, 0, 0);
@@ -296,7 +286,7 @@ margin-top: -7%;
 }
 
 @media screen and (max-width: 550px) {
-    .pic-infro {
+    #pic_info {
         display: flex;
         flex-direction: column;
         width: 300%;
@@ -304,48 +294,20 @@ margin-top: -7%;
         margin-left: -90%;
     }
 
-    .co13 {
+    #pic_info div a p {
         margin-bottom: -425%;
         margin-left: 20%;
         font-size: 30px;
     }
 
-    .co14 {
-        /* margin-bottom: -480%; */
-        margin-left: -9%;
-        margin-bottom: -472%;
-        font-size: 30px;
-    }
-
-    .co15 {
-        /* margin-bottom: -480%; */
-
-        margin-left: -20%;
-        margin-bottom: -520%;
-        font-size: 30px;
-    }
 }
 
-/* .intro { */
-/* margin-left: 350px; */
-/* border: 2px solid #000;
-    display: inline-block;
-    margin-left: 20%;
-    margin-top: -100%;
-    background-color: darkolivegreen;
-    position: absolute; */
-/* } */
+@media screen and (max-width: 750px) {
+    #pic_info {
+        background-color: aquamarine;
+    }
 
-
-/* 下方介紹的圖片 */
-/* .infor-img {
-    width: 300px;
-    height: 250px;
-    font-size: 50px;
-    margin: 25px;
-    color: white;
- } */
-
+}
 
 
 .footer {
