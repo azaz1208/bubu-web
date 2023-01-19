@@ -1,0 +1,21 @@
+
+.info-list dt {
+  width: 50%;
+  padding: 10px 0;
+  border-top: 1px hsl(45, 6%, 14%) dotted;
+  position: relative;
+  
+  
+}
+.info-list dd {
+  width: 30%;
+  padding: 10px 0;
+  /* border-top: 1px #1c1b19 dotted; */
+  position: absolute;
+  left: 20%;
+  margin-top: -2.5%;
+ 
+}
+.info-list :first-of-type {
+    border-top: none;
+  }

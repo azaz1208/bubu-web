@@ -1,0 +1,61 @@
+/* 梯形 */
+.red {
+    width: 200px;
+    height: 300px;
+    background-color: brown;
+}
+
+.blue {
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+}
+
+.yellow {
+    /* height整個區塊會往下移  */
+    height: 0;
+    width: 150px;
+    border-bottom:300px solid rgb(255, 255, 0);
+    /*  height*/
+    border-right: 900px solid transparent;
+    
+}
+
+.color {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 對話框 */
+
+/* 方塊 ▼*/
+.dialog-bottom {
+    background: #888888;
+    height: 62px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 90px;
+}
+
+/*方塊下方的三角形 ▼ */
+.dialog-bottom::after {
+    border-color: #888888 #888888 transparent transparent;
+    border-style: solid solid solid solid;
+
+    /* 設定邊框大小可拼湊出任意形狀的三角形 */
+    border-width: 13px 8px;
+
+    bottom: -20px;
+
+    /* 必須指定，才能顯示內容 */
+    content: "";
+
+    height: 0px;
+
+
+    /* 必須指定，否則會變梯形 */
+    position: absolute;
+    left: 46px;
+    left: 30px;
+    width: 0px;
+}
