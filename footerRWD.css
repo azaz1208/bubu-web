@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    background-repeat: repeat-x;
+}
+
+.footer {
+    padding: 20px 0;
+    background: #d8c7a0;
+}
+
+/* 店面圖片、營業資訊 section */
+.footer_info {
+    /* background-color: brown; */
+    display: flex;
+    flex-wrap: nowrap; /* 預設為nowrap，所以不寫也沒關係 */
+    width: 100%;
+    justify-content: center;
+
+}
+
+/* 裝店面圖片的div */
+.footer_info_pic {
+    width: 50%;
+    height: auto;
+    max-height: 300px;
+}
+
+/* 店面圖片 */
+.footer_info_pic img {
+    box-sizing: border-box;
+    border: #fff 5px solid;
+    margin: 3px 20px;
+
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+}
+
+/* 裝營業資訊的div */
+.footer_info_data {
+    /* background-color: blueviolet; */
+    max-width: 800px
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+/* 營業資訊<dl> */
+.footer_info_list {
+    font-size: 20px;
+    /* background-color: aqua; */
+
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 3%;
+    margin-left: 10%;
+}
+
+.footer_info_list dt {
+    clear: left;
+    float: left;
+    max-width: 10em;
+    margin-bottom: 10px;
+
+
+}
+
+.footer_info_list dd {
+    margin-bottom: 10px;
+    overflow: hidden;
+
+}
+
+
+/* footer RWD */
+
+@media screen and (max-width: 768px) {
+    .footer_info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* .footer_info_pic {
+        max-width: 28%;
+    } */
+
+    .footer_info_data {
+        max-width: 400px
+
+    }
+}
+
+@media screen and (min-width: 810px) {
+    /* 店面圖片 */
+    .footer_info_pic img {
+        width: 405px;
+        height: 274px;
+    }
+}
+
+.sns {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sns li {
+    display: inline-block;
+}
+
+.sns a {
+    display: block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #d8c7a0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sns a:hover {
+    opacity: 0.7;
+}
+
+/*copyright*/
+.copyright {
+    text-align: center;
+}
+
+.pagetop {
+    max-width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+}
+
+.pagetop a {
+    display: block;
+    max-width: 45px;
+    height: 45px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+}
+
+.pagetop a:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #59220d;
+}
+
+.pagetop a::before {
+    content: "";
+    display: block;
+    max-width: 10px;
+    height: 10px;
+    margin: auto;
+    border-top: 1px solid #59220d;
+    border-right: 1px solid #59220d;
+    transform: rotate(-45deg);
+}
