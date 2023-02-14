@@ -169,6 +169,16 @@ body {
 /* 商品名字 */
 .container h1 {
     font-size: 26px;
+    height: 34px;
+}
+
+@media screen and (max-width: 956px) {
+    .product6 h1 {
+        font-size: 1.3rem;
+        /* color: #3833d3; */
+    }
+
+
 
 }
 
@@ -183,6 +193,11 @@ body {
 
     padding: 10px;
 
+}
+
+.col h1 {
+    /* font-size: 200%; */
+    width: 100%;
 }
 
 .col img {
@@ -365,7 +380,7 @@ body {
 
 
 
-.footer-info-ph img {
+.footer_info_pic img {
     box-sizing: border-box;
     border: #fff 5px solid;
     max-width: 90%;
@@ -374,7 +389,7 @@ body {
 
 }
 
-.footer-info-list {
+.footer_info_list {
     margin-bottom: 50px;
     font-size: 20px;
     margin-top: 50px;
@@ -382,7 +397,7 @@ body {
     margin-left: 40%;
 }
 
-.footer-info-list dt {
+.footer_info_list dt {
     clear: left;
     float: left;
     max-width: 10em;
@@ -391,30 +406,32 @@ body {
 
 }
 
-.footer-info-list dd {
+.footer_info_list dd {
     margin-bottom: 10px;
     overflow: hidden;
 
 }
 
 /* footer的照片 */
-.footer-info-ph {
+.footer_info_pic {
     max-width: 50%;
     height: 50px;
 
 }
 
+/* footer RWD */
+
 @media screen and (min-width: 768px) {
-    .footer-info {
+    .footer_info {
         display: flex;
        
     }
 
-    .footer-info-ph {
+    .footer_info_pic {
         max-width: 28%;
     }
 
-    .footer-info-data {
+    .footer_info_data {
         max-width: 65.9574%;
        
     }
